@@ -18,7 +18,7 @@ function LoginForm() {
 
     try {
       const { data } = await axios.post(
-        'https://leapsail-ng-app.herokuapp.com/api/auth/login',
+        'http://localhost:8000/api/auth/login',
         {
           email,
           password,

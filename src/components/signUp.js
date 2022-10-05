@@ -13,17 +13,17 @@ function SignUp() {
 
   const createUser = async () => {
     try {
-      // const { data } = await axios.post(
-      //   'http://localhost:8000/api/auth/register',
-      //   {
-      //     firstName,
-      //     lastName,
-      //     email,
-      //     password,
-      //   }
-      // );
-      // console.log(data);
-      // navigate('/login');
+      const { data } = await axios.post(
+        'http://localhost:8000/api/auth/register',
+        {
+          firstName,
+          lastName,
+          email,
+          password,
+        }
+      );
+      console.log(data);
+      navigate('/login');
     } catch (error) {
       console.log(error);
     }
@@ -32,13 +32,11 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // if (password === repeatPassword) {
-    //   createUser();
-    // } else {
-    //   console.log('wrong credientials');
-    // }
-    console.log('submit user demilade is a cutie');
-    console.log(firstName);
+    if (password === repeatPassword) {
+      createUser();
+    } else {
+      console.log('wrong credientials');
+    }
   };
 
   return (

@@ -22,23 +22,22 @@ function SignUp() {
       //     password,
       //   }
       // );
-
       // console.log(data);
       // navigate('/login');
-      console.log('rex');
     } catch (error) {
       console.log(error);
     }
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
-    if (password === repeatPassword) {
-      createUser();
-    } else {
-      console.log('wrong credientials');
-    }
+    // if (password === repeatPassword) {
+    //   createUser();
+    // } else {
+    //   console.log('wrong credientials');
+    // }
+    console.log('submit user demilade');
   };
 
   return (

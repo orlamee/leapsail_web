@@ -38,6 +38,7 @@ function SignUp() {
     //   console.log('wrong credientials');
     // }
     console.log('submit user demilade is a cutie');
+    console.log(firstName);
   };
 
   return (

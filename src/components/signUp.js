@@ -30,7 +30,7 @@ function SignUp() {
   };
 
   const handleSubmit = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
 
     // if (password === repeatPassword) {
     //   createUser();

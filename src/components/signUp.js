@@ -37,7 +37,7 @@ function SignUp() {
     // } else {
     //   console.log('wrong credientials');
     // }
-    console.log('submit user demilade');
+    console.log('submit user demilade is a cutie');
   };
 
   return (

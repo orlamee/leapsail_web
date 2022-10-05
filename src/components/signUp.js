@@ -14,7 +14,7 @@ function SignUp() {
   const createUser = async () => {
     try {
       const { data } = await axios.post(
-        'https://localhost:8000/api/auth/register',
+        'http://localhost:8000/api/auth/register',
         {
           firstName,
           lastName,

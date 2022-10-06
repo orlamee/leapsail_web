@@ -11,10 +11,6 @@ function SignUp() {
 
   const navigate = useNavigate();
 
-  // const createUser = async () => {
-
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -31,8 +27,6 @@ function SignUp() {
       } catch (error) {
         console.log(error);
       }
-      // console.log({ firstName, lastName, email, password });
-      // createUser();
     } else {
       console.log('wrong credientials');
     }

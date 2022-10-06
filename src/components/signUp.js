@@ -20,7 +20,12 @@ function SignUp() {
 
     if (password === repeatPassword) {
       try {
-        const { data } = await axios.get('http://localhost:8000/api/auth');
+        const { data } = await axios.post('http://localhost:8000/api/auth', {
+          firstName,
+          lastName,
+          email,
+          password,
+        });
         console.log(data);
         navigate('/login');
       } catch (error) {

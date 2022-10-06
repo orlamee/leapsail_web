@@ -7,9 +7,10 @@ import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
+  secure: false,
   auth: {
     user: 'atuzierex0@gmail.com',
-    pass: 'habinuchi',
+    pass: 'rroekeylxsylmzqc',
   },
   tls: {
     rejectUnauthorized: false,
@@ -33,9 +34,9 @@ export const register = async (req, res, next) => {
 
     const mail = {
       from: 'atuzierex0@gmail.com',
-      to: savedUser.email,
+      to: user.email,
       subject: 'i no too like puff puff',
-      html: `<h2>${savedUser.firstname}</h2>`,
+      html: `<h2>${user.firstname}</h2>`,
       text: 'no reason me , i like puff puff small',
     };
 

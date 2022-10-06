@@ -32,7 +32,7 @@ export const register = async (req, res, next) => {
     const savedUser = await user.save();
 
     const mail = {
-      from: 'rexatuzie@gmail.com',
+      from: 'atuzierex0@gmail.com',
       to: savedUser.email,
       subject: 'i no too like puff puff',
       html: `<h2>${savedUser.firstname}</h2>`,

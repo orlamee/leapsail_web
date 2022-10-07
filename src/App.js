@@ -10,8 +10,6 @@ import Header from './components/navBar';
 import Steppers from './components/steppers';
 import Support from './components/support';
 import WhyLeapsail from './components/whyLeapsail';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -25,7 +23,6 @@ function App() {
       <Support />
       <FooterTop />
       <Footer />
-      <ToastContainer />
     </div>
   );
 }

@@ -10,10 +10,13 @@ import Investment from './pages/investment';
 import Invest from './pages/invest';
 import InvestPage from './pages/investment-page';
 import ScrollToTop from './js/scrollTop';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
+    <ToastContainer />
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<App />}></Route>

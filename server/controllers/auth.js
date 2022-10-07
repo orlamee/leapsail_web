@@ -5,6 +5,8 @@ import bcrypt from 'bcrypt';
 import crypto from 'crypto';
 import nodemailer from 'nodemailer';
 
+//
+
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   secure: false,
@@ -30,14 +32,13 @@ export const register = async (req, res, next) => {
   });
 
   try {
-    const savedUser = await user.save();
-
     const mail = {
       from: 'atuzierex0@gmail.com',
       to: user.email,
       subject: 'i no too like puff puff',
-      html: `<h2>${user.firstname}</h2>`,
-      text: 'no reason me , i like puff puff small',
+      html: `<h2>${user.firstname}</h2>, Thanks for registering
+      <h4>Please verify your email to continue</h4>
+      <a herf="https://${req.headers.host}/user/verify-email?token=${user.emailToken}">verify your email</a>`,
     };
 
     transporter.sendMail(mail, (err) => {
@@ -48,6 +49,7 @@ export const register = async (req, res, next) => {
         res.status(200).json(savedUser);
       }
     });
+    const savedUser = await user.save();
   } catch (error) {
     next(error);
   }

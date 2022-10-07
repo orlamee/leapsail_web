@@ -35,10 +35,10 @@ export const register = async (req, res, next) => {
     const mail = {
       from: 'atuzierex0@gmail.com',
       to: user.email,
-      subject: 'i no too like puff puff',
-      html: `<h2>${user.firstname}</h2>, Thanks for registering
+      subject: 'Leapsail Email verification',
+      html: `<h2>${user.firstname}, Thanks for registering</h2>
       <h4>Please verify your email to continue</h4>
-      <a herf="https://${req.headers.host}/user/verify-email?token=${user.emailToken}">verify your email</a>`,
+      <a href="https://${req.headers.host}/user/verify-email?token=${user.emailToken}">verify your email</a>`,
     };
 
     transporter.sendMail(mail, (err) => {

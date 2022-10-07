@@ -18,7 +18,7 @@ function SignUp() {
     if (password === repeatPassword) {
       try {
         const { data } = await axios.post(
-          'http://localhost:8000/api/auth/register',
+          'https://lps-ng-app.herokuapp.com/api/auth/register',
           {
             firstName,
             lastName,

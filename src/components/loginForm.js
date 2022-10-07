@@ -18,7 +18,7 @@ function LoginForm() {
 
     try {
       const { data } = await axios.post(
-        'http://localhost:8000/api/auth/login',
+        'https://lps-ng-app.herokuapp.com/api/auth/register/login',
         {
           email,
           password,

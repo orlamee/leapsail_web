@@ -38,7 +38,7 @@ export const register = async (req, res, next) => {
       subject: 'Leapsail Email verification',
       html: `<h2>${user.firstname}, Thanks for registering</h2>
       <h4>Please verify your email to continue</h4>
-      <a href="https://${req.headers.host}/user/verify-email?token=${user.emailToken}">verify your email</a>`,
+      <a href="https://leapsail-web.netlify.app/login">verify your email</a>`,
     };
 
     transporter.sendMail(mail, (err) => {

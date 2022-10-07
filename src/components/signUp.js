@@ -26,7 +26,7 @@ function SignUp() {
           }
         );
         console.log(data);
-        navigate('/login');
+        // navigate('/login');
       } catch (error) {
         console.log(error);
       }

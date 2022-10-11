@@ -35,7 +35,7 @@ function SignUp() {
         console.log(data);
       } catch (error) {
         Swal.fire(error.response.data.message);
-        console.log(error.response.data.message);
+        console.log(error.a.response.data.message);
       }
     } else {
       // Swal.fire('Check password & try again');

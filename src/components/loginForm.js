@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import download from '../img/downloads.png';
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 function LoginForm() {
   const [email, setEmail] = useState('');
@@ -29,6 +30,7 @@ function LoginForm() {
 
       navigate('/dashboard');
     } catch (err) {
+      Swal.fire('Any fool can use a computer');
       console.log(err);
     }
   };

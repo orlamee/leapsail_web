@@ -34,11 +34,11 @@ function SignUp() {
         });
         console.log(data);
       } catch (error) {
-        Swal.fire('Any fool can use a computer');
+        Swal.fire(error.response.data);
         console.log(error);
       }
     } else {
-      Swal.fire('Any fool can use a computer');
+      Swal.fire('Check password & try again');
       console.log('wrong credentials');
     }
   };

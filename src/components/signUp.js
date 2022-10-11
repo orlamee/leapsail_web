@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-// import { toast } from 'react-toastify';
 
 function SignUp() {
   const [firstName, setFirstName] = useState('');
@@ -27,8 +26,6 @@ function SignUp() {
           }
         );
         console.log(data);
-        // navigate('/login');
-        // toast('Check mail and verify your account to continue');
       } catch (error) {
         console.log(error);
       }

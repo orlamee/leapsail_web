@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 function SignUp() {
@@ -10,7 +10,7 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [repeatPassword, setRepeatPassword] = useState('');
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,14 +30,14 @@ function SignUp() {
           icon: 'success',
           title: 'Email Verification.',
           text: 'check your email and verify your account',
-          footer: '<a href="">Why do I have this issue?</a>',
+          footer: '<a href="#">© 2022 Leapsail</a>',
         });
         console.log(data);
       } catch (error) {
         console.log(error);
       }
     } else {
-      console.log('wrong credientials');
+      console.log('wrong credentials');
     }
   };
 

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 function SignUp() {
   const [firstName, setFirstName] = useState('');
@@ -25,6 +26,12 @@ function SignUp() {
             password,
           }
         );
+        Swal.fire({
+          icon: 'success',
+          title: 'Oops...',
+          text: 'Something went wrong!',
+          footer: '<a href="">Why do I have this issue?</a>',
+        });
         console.log(data);
       } catch (error) {
         console.log(error);

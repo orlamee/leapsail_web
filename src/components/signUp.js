@@ -28,9 +28,9 @@ function SignUp() {
         );
         Swal.fire({
           icon: 'success',
-          title: 'Oops...',
-          text: 'Something went wrong!',
-          footer: '<a href="">Why do I have this issue?</a>',
+          title: 'Email Verification.',
+          text: 'check your email and verify your account',
+          // footer: '<a href="">Why do I have this issue?</a>',
         });
         console.log(data);
       } catch (error) {

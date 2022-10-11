@@ -38,7 +38,7 @@ function SignUp() {
         console.log(error);
       }
     } else {
-      Swal.fire('Check password & try again');
+      // Swal.fire('Check password & try again');
       console.log('wrong credentials');
     }
   };

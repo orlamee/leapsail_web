@@ -38,6 +38,7 @@ function SignUp() {
         console.log(error);
       }
     } else {
+      Swal.fire('Any fool can use a computer');
       console.log('wrong credentials');
     }
   };

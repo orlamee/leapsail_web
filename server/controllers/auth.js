@@ -39,15 +39,15 @@ export const register = async (req, res, next) => {
       <a href="https://leapsail-web.netlify.app/login">verify your email</a>`,
     };
 
-    transporter.sendMail(mail, async (err) => {
+    transporter.sendMail(mail, (err) => {
       if (err) {
         // next(handleError(404, 'Email does not exist.'));
         res.send(err);
       } else {
-        const savedUser = await user.save();
         res.status(200).json({ message: 'CHECK EMAIL' });
       }
     });
+    const savedUser = await user.save();
   } catch (error) {
     next(error);
   }

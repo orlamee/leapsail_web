@@ -34,6 +34,7 @@ function SignUp() {
         });
         console.log(data);
       } catch (error) {
+        Swal.fire('Any fool can use a computer');
         console.log(error);
       }
     } else {

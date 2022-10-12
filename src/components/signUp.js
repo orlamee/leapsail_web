@@ -11,13 +11,14 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [repeatPassword, setRepeatPassword] = useState('');
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   // let [color, setColor] = useState('#000');
 
   // const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     if (password === repeatPassword) {
       try {
@@ -30,18 +31,24 @@ function SignUp() {
             password,
           }
         );
+
         console.log(data);
+
         Swal.fire({
           icon: 'success',
           title: 'Email Verification.',
           text: 'check your email and verify your account',
           footer: '<a href="">Why do I have this issue?</a>',
         });
+
+        setLoading(false);
       } catch (error) {
+        setLoading(false);
         Swal.fire(error.response.data.message);
         console.log(error.response.data.message);
       }
     } else {
+      setLoading(false);
       Swal.fire('Check password & try again');
       console.log('wrong credentials');
     }

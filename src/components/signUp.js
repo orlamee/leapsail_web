@@ -26,13 +26,13 @@ function SignUp() {
             password,
           }
         );
+        console.log(data);
         Swal.fire({
           icon: 'success',
           title: 'Email Verification.',
           text: 'check your email and verify your account',
           footer: '<a href="">Why do I have this issue?</a>',
         });
-        console.log(data);
       } catch (error) {
         Swal.fire(error.response.data.message);
         console.log(error.response.data.message);

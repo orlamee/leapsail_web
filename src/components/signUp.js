@@ -11,8 +11,8 @@ function SignUp() {
   const [password, setPassword] = useState('');
   const [repeatPassword, setRepeatPassword] = useState('');
 
-  let [loading, setLoading] = useState(true);
-  let [color, setColor] = useState('#000');
+  const [loading, setLoading] = useState(true);
+  // let [color, setColor] = useState('#000');
 
   // const navigate = useNavigate();
 
@@ -47,18 +47,18 @@ function SignUp() {
     }
   };
 
-  if (loading) {
-    return (
-      <ClipLoader
-        color={color}
-        loading={loading}
-        // cssOverride={override}
-        size={150}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <ClipLoader
+  //       color={color}
+  //       loading={loading}
+  //       // cssOverride={override}
+  //       size={150}
+  //       aria-label="Loading Spinner"
+  //       data-testid="loader"
+  //     />
+  //   );
+  // }
 
   return (
     <section className="login-form">
@@ -245,15 +245,28 @@ function SignUp() {
                       and Fees.
                     </h6>
                   </div>
-                  <div className="col-12">
-                    <button
-                      type="submit"
-                      className="btn brand-bg text-white px-4 py-3 fs-6 rounded-pill"
-                      style={{ width: '100%' }}
-                    >
-                      Register
-                    </button>
-                  </div>
+                  {loading ? (
+                    <div className="col-12">
+                      <button
+                        type="submit"
+                        className="btn brand-bg text-white px-4 py-3 fs-6 rounded-pill"
+                        style={{ width: '100%' }}
+                      >
+                        Register
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="col-12">
+                      <button
+                        disabled={true}
+                        className="btn brand-bg text-white px-4 py-3 fs-6 rounded-pill"
+                        style={{ width: '100%' }}
+                      >
+                        Loading
+                      </button>
+                    </div>
+                  )}
+
                   <div className="mt-5">
                     <h5 className="text-center">
                       You already have an account?{' '}

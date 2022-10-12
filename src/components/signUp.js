@@ -249,6 +249,7 @@ function SignUp() {
                     <div className="col-12">
                       <button
                         // disabled={true}
+                        type="button"
                         className="btn brand-bg text-white px-4 py-3 fs-6 rounded-pill"
                         style={{ width: '100%' }}
                       >

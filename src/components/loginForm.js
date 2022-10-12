@@ -30,7 +30,7 @@ function LoginForm() {
 
       navigate('/dashboard');
     } catch (err) {
-      Swal.fire('Any fool can use a computer');
+      Swal.fire(err.response.data.message);
       console.log(err);
     }
   };

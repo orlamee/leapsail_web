@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import ClipLoader from 'react-spinners/ClipLoader';
 
 function SignUp() {
   const [firstName, setFirstName] = useState('');
@@ -9,6 +10,9 @@ function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [repeatPassword, setRepeatPassword] = useState('');
+
+  let [loading, setLoading] = useState(true);
+  let [color, setColor] = useState('#ffffff');
 
   // const navigate = useNavigate();
 
@@ -42,6 +46,19 @@ function SignUp() {
       console.log('wrong credentials');
     }
   };
+
+  if (loading) {
+    return (
+      <ClipLoader
+        color={color}
+        loading={loading}
+        // cssOverride={override}
+        size={150}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+    );
+  }
 
   return (
     <section className="login-form">

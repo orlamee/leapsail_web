@@ -12,7 +12,7 @@ function SignUp() {
   const [repeatPassword, setRepeatPassword] = useState('');
 
   let [loading, setLoading] = useState(true);
-  let [color, setColor] = useState('#ffffff');
+  let [color, setColor] = useState('#000');
 
   // const navigate = useNavigate();
 

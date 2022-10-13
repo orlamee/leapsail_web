@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 function SignUp() {
@@ -170,7 +170,7 @@ function SignUp() {
                     <h5 className="text-center">
                       You already have an account?{' '}
                       <span>
-                        <Link to="/login">Login</Link>
+                        <a href="/login">Login</a>
                       </span>
                     </h5>
                   </div>

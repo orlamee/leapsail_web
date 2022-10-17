@@ -31,8 +31,6 @@ function SignUp() {
           }
         );
 
-        console.log(data);
-
         Swal.fire({
           icon: 'success',
           title: 'Email Verification.',

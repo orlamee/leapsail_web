@@ -45,6 +45,7 @@ function SignUp() {
         setLoading(false);
         Swal.fire(error.response.data.message);
         console.log(error.response.data.message);
+        console.log(error);
       }
     } else {
       setLoading(false);
@@ -100,7 +101,7 @@ function SignUp() {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="mb-4">
                     <input
                       className="form-control"

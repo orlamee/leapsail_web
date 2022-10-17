@@ -11,7 +11,8 @@ import Invest from './pages/invest';
 import InvestPage from './pages/investment-page';
 import ScrollToTop from './js/scrollTop';
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { unregister as unregisterServiceWorker } from './js/registerServiceWorker';
+unregisterServiceWorker();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -5,9 +5,7 @@ import LoginFooter from '../components/loginFooter';
 
 const dashboard = () => {
   const user = JSON.parse(localStorage.getItem('user'));
-
   const { firstname, lastname } = user;
-
   const handleClick = () => {
     localStorage.clear();
   };

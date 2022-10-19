@@ -38,7 +38,7 @@ function ThirdLayer() {
                 </div>
               </div>
               <div className="my-5 text-center">
-                <Link className='btn brand-bg text-white px-5 py-3 rounded-pill brand-bg text-white fs-6' to="/">Proceed</Link>
+                <Link className='btn brand-bg text-white px-5 py-3 rounded-pill brand-bg text-white fs-6' to="/account-setup">Proceed</Link>
               </div>
             </form>
           </div>

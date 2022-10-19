@@ -327,7 +327,51 @@
 
 .invest-form {
   background: #fff;
-  padding: 40px 50px;
+  padding: 30px 50px;
   border-radius: 30px;
   margin-top: 80px;
 }
+
+.account-header h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 35px;
+  margin-top: 48px;
+}
+
+.account-header {
+  padding: 140px 20px;
+  background-image: url("../img/header.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title h3 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #2E3444;
+  margin-bottom: -40px;
+}
+
+.nextofkin h3 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #2E3444;
+  margin-bottom: -40px;
+}
+
+.otp h6 {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #2E3444;
+}
+
+.nextofkin {
+  margin: 90px 10px;
+}
+

@@ -13,6 +13,7 @@ import ScrollToTop from './js/scrollTop';
 import { ToastContainer } from 'react-toastify';
 import { unregister as unregisterServiceWorker } from './js/registerServiceWorker';
 import AccountSetup from './pages/investment-account';
+import Success from './pages/invest-success';
 unregisterServiceWorker();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,6 +31,7 @@ root.render(
       <Route path="/investment-page" element={<InvestPage />}></Route>
       <Route path="/dashboard" element={<Dashboard />}></Route>
       <Route path="/account-setup" element={<AccountSetup/>}></Route>
+      <Route path="/success" element={<Success/>}></Route>
     </Routes>
   </BrowserRouter>
 );

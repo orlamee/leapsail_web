@@ -61,7 +61,7 @@ function Bvn() {
                     <h6>A one-time password will be sent to <br/>your email - <span style={{fontSize: "30px"}}>expires after <span style={{color :"#F6B736"}}>60 secs</span></span></h6>
                   </div>
                   <div className="col-md-4" style={{marginTop: "20px"}}>
-                    <Link className='btn brand-bg text-white px-5 py-3 rounded-pill brand-bg text-white fs-6' to="#">Request OTP</Link>
+                    <Link className='brand-bg text-white px-5 py-3 rounded-pill brand-bg text-white fs-6' to="#">Request OTP</Link>
                   </div>
                 </div>
                 <div className="invest-form mb-5">

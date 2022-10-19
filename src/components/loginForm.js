@@ -92,7 +92,7 @@ function LoginForm() {
                     <div className="col-12">
                       <button
                         type="submit"
-                        className="btn brand-bg text-white px-4 py-3 fs-6 rounded-pill"
+                        className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
                         style={{ width: '100%' }}
                       >
                         Log in
@@ -122,7 +122,7 @@ function LoginForm() {
                     <div className="right-footer">
                       <a
                         href="/register"
-                        className="btn btn-outline-warning px-4 py-3 fs-6 rounded-pill"
+                        className="btn-outline-warning px-4 py-3 fs-6 rounded-pill"
                         style={{ width: '100%' }}
                       >
                         Sign up

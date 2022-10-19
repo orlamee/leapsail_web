@@ -119,7 +119,7 @@ function Bvn() {
                         id="flexCheckDefault"
                       />
                       <label className="form-check-label">
-                        <h6>I agree to the <span></span>terms and conditions of this service</h6>
+                        <h6>I agree to the <span style={{color: "#F6B736"}}>terms and conditions</span> of this service</h6>
                       </label>
                     </div>
                     <div
@@ -127,7 +127,7 @@ function Bvn() {
                       style={{ marginTop: '-39px' }}
                     >
                       <h6>
-                        <Link to="#">Download Agreement Form</Link>
+                        <Link to="#"><span style={{color: "#F6B736"}}>Download Agreement Form</span></Link>
                       </h6>
                     </div>
                   </div>

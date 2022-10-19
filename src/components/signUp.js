@@ -12,9 +12,6 @@ function SignUp() {
   const [repeatPassword, setRepeatPassword] = useState('');
 
   const [loading, setLoading] = useState(false);
-  // let [color, setColor] = useState('#000');
-
-  // const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,6 +28,8 @@ function SignUp() {
             password,
           }
         );
+
+        console.log(data);
 
         Swal.fire({
           icon: 'success',
@@ -52,19 +51,6 @@ function SignUp() {
       console.log('wrong credentials');
     }
   };
-
-  // if (loading) {
-  //   return (
-  //     <ClipLoader
-  //       color={color}
-  //       loading={loading}
-  //       // cssOverride={override}
-  //       size={150}
-  //       aria-label="Loading Spinner"
-  //       data-testid="loader"
-  //     />
-  //   );
-  // }
 
   return (
     <section className="login-form">

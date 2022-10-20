@@ -67,15 +67,27 @@ function ForgotForm() {
                       profile.
                     </h6>
                   </div>
-                  <div className="">
-                    <button
-                      type="submit"
-                      className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
-                      style={{ width: '100%' }}
-                    >
-                      Send
-                    </button>
-                  </div>
+                  {loading ? (
+                    <div className="col-12">
+                      <button
+                        type="button"
+                        className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
+                        style={{ width: '100%' }}
+                      >
+                        Loading
+                      </button>
+                    </div>
+                  ) : (
+                    <div className="col-12">
+                      <button
+                        type="submit"
+                        className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
+                        style={{ width: '100%' }}
+                      >
+                        Register
+                      </button>
+                    </div>
+                  )}
                 </form>
               </div>
             </div>

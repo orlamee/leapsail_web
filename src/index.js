@@ -26,7 +26,7 @@ root.render(
       <Route path="/" element={<App />}></Route>
       <Route path="/login" element={<Login />}></Route>
       <Route path="/forgot-password" element={<ForgotPassword />}></Route>
-      <Route path="/reset-password/" element={<ResetPassword />}></Route>
+      <Route path="/reset-password/:id" element={<ResetPassword />}></Route>
       <Route path="/register" element={<Signup />}></Route>
       <Route path="/investment" element={<Investment />}></Route>
       <Route path="/invest" element={<Invest />}></Route>

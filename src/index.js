@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/login';
 import Dashboard from './pages/dashboard';
 import ForgotPassword from './pages/forgotPassword';
+import ResetPassword from './pages/resetPaasword';
 import Signup from './pages/register';
 import Investment from './pages/investment';
 import Invest from './pages/invest';
@@ -25,13 +26,14 @@ root.render(
       <Route path="/" element={<App />}></Route>
       <Route path="/login" element={<Login />}></Route>
       <Route path="/forgot-password" element={<ForgotPassword />}></Route>
+      <Route path="/reset-password/:id" element={<ResetPassword />}></Route>
       <Route path="/register" element={<Signup />}></Route>
       <Route path="/investment" element={<Investment />}></Route>
       <Route path="/invest" element={<Invest />}></Route>
       <Route path="/investment-page" element={<InvestPage />}></Route>
       <Route path="/dashboard" element={<Dashboard />}></Route>
-      <Route path="/account-setup" element={<AccountSetup/>}></Route>
-      <Route path="/success" element={<Success/>}></Route>
+      <Route path="/account-setup" element={<AccountSetup />}></Route>
+      <Route path="/success" element={<Success />}></Route>
     </Routes>
   </BrowserRouter>
 );

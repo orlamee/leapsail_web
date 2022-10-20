@@ -1,10 +1,39 @@
+import axios from 'axios';
 import React, { useState } from 'react';
+import Swal from 'sweetalert2';
 
 function ForgotForm() {
   const [email, setEmail] = useState('');
+  const [loading, setLoading] = useState('');
 
-  const handleSubmit = () => {
-    alert('submit');
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const { data } = await axios.post(
+        'https://lps-ng-app.herokuapp.com/api/user/forgot-password',
+        {
+          email,
+        }
+      );
+
+      console.log(data);
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Email Verification.',
+        text: 'check your email and verify your account',
+        // footer: '<a href="">Why do I have this issue?</a>',
+      });
+
+      setLoading(false);
+    } catch (error) {
+      setLoading(false);
+      Swal.fire(error.response.data.message);
+      console.log(error.response.data.message);
+      console.log(error);
+    }
   };
 
   return (

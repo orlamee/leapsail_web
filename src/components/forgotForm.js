@@ -1,7 +1,12 @@
-import React from "react";
-
+import React, { useState } from 'react';
 
 function ForgotForm() {
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = () => {
+    alert('submit');
+  };
+
   return (
     <section className="login-form">
       <div className="container">
@@ -10,16 +15,37 @@ function ForgotForm() {
             <div className="form-box">
               <div className="passform">
                 <h4 className="text-center">Forgot your password?</h4>
-                <h6 className="mt-3 text-center">Enter your email below and we'll send you instructions to create a<br/>new password.</h6>
-                <form className='row mt-5'>
+                <h6 className="mt-3 text-center">
+                  Enter your email below and we'll send you instructions to
+                  create a<br />
+                  new password.
+                </h6>
+                <form className="row mt-5" onSubmit={handleSubmit}>
                   <div className="mb-4">
-                    <input type="email" className="form-control" id="formGroupExampleInput" placeholder="Enter email address" required/>
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      className="form-control"
+                      id="formGroupExampleInput"
+                      placeholder="Enter email address"
+                      required
+                    />
                   </div>
                   <div className="mb-4">
-                    <h6 className="text-center">Make sure you enter the same email you used to create your profile.</h6>
+                    <h6 className="text-center">
+                      Make sure you enter the same email you used to create your
+                      profile.
+                    </h6>
                   </div>
                   <div className="">
-                    <button type="button" className="brand-bg text-white px-4 py-3 fs-6 rounded-pill" style={{width: "100%"}}>Send</button>
+                    <button
+                      type="submit"
+                      className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
+                      style={{ width: '100%' }}
+                    >
+                      Send
+                    </button>
                   </div>
                 </form>
               </div>
@@ -28,7 +54,7 @@ function ForgotForm() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default ForgotForm;

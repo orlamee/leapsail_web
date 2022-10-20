@@ -84,7 +84,7 @@ function ForgotForm() {
                         className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
                         style={{ width: '100%' }}
                       >
-                        Register
+                        Send
                       </button>
                     </div>
                   )}

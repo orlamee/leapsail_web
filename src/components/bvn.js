@@ -31,7 +31,7 @@ function Bvn() {
                       <option value="firstbank">First Bank</option>
                       <option value="fcmb">First City Monument Bank (FCMB)</option>
                       <option value="gtb">Guaranty Trust Bank (GTB)</option>
-                      <option value="gtb">Globus Bank</option>
+                      <option value="globus">Globus Bank</option>
                       <option value="heritage">Heritage Bank</option>
                       <option value="keystone">Keystone Bank</option>
                       <option value="polaris">Polaris Bank</option>
@@ -61,7 +61,7 @@ function Bvn() {
                     <h6>A one-time password will be sent to <br/>your email - <span style={{fontSize: "30px"}}>expires after <span style={{color :"#F6B736"}}>60 secs</span></span></h6>
                   </div>
                   <div className="col-md-4" style={{marginTop: "20px"}}>
-                    <Link className='btn brand-bg text-white px-5 py-3 rounded-pill brand-bg text-white fs-6' to="#">Request OTP</Link>
+                    <Link className='brand-bg text-white px-5 py-3 rounded-pill brand-bg text-white fs-6' to="#">Request OTP</Link>
                   </div>
                 </div>
                 <div className="invest-form mb-5">
@@ -132,7 +132,7 @@ function Bvn() {
                     </div>
                   </div>
                   <div className="my-5 text-center">
-                    <Link className='btn brand-bg text-white px-5 py-3 rounded-pill brand-bg text-white fs-6' to="#">Invest</Link>
+                    <Link className='brand-bg text-white px-5 py-3 rounded-pill brand-bg text-white fs-6' to="/success">Invest</Link>
                   </div>
                 </div>
               </form>

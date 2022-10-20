@@ -151,9 +151,6 @@ function Header() {
                 <li className="nav-item">
                   <Link className="nav-link" to="/">Pricing</Link>
                 </li>
-                {/* <li className="nav-item">
-                  <Link className="nav-link" to="/">Learn</Link>
-                </li> */}
                 <li className="nav-item dropdown">
                   <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn</Link>
                   <div className="dropdown-menu dropdown-large">

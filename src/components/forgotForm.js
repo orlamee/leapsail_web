@@ -19,7 +19,7 @@ function ForgotForm() {
                     <h6 className="text-center">Make sure you enter the same email you used to create your profile.</h6>
                   </div>
                   <div className="">
-                    <button type="button" className="btn brand-bg text-white px-4 py-3 fs-6 rounded-pill" style={{width: "100%"}}>Send</button>
+                    <button type="button" className="brand-bg text-white px-4 py-3 fs-6 rounded-pill" style={{width: "100%"}}>Send</button>
                   </div>
                 </form>
               </div>

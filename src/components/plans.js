@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 
@@ -11,8 +12,8 @@ function Plans() {
           </div>
         </div>
         <div className="row mt-5">
-          <div className="col-md-7">
-            <div className="row mb-3">
+          <div className="col-md-7 mb-2">
+            <div className="row mb-5">
               <div className="col-md-6 mb-3">
                 <div className="form-check">
                   <input className="form-check-input custom-radio" type="radio" name="flexRadioDefault"/>
@@ -21,7 +22,7 @@ function Plans() {
                       Regular Service
                     </label>
                     <h6 className="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="/">Request</a>
+                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="#">Request</a>
                   </div>
                 </div>
               </div>
@@ -33,7 +34,7 @@ function Plans() {
                       VIP Service - N12, 345
                     </label>
                     <h6 className="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="/">Upgrade</a>
+                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="#">Upgrade</a>
                   </div>
                 </div>
               </div>
@@ -47,7 +48,7 @@ function Plans() {
                       Premium Service - N12,345
                     </label>
                     <h6 className="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="/">Upgrade</a>
+                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="#">Upgrade</a>
                   </div>
                 </div>
               </div>
@@ -59,13 +60,13 @@ function Plans() {
                       Gbas Gbos - N12,345
                     </label>
                     <h6 className="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="/">Upgrade</a>
+                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="#">Upgrade</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-5 mt-4">
+          <div className="col-md-5">
             <div className="">
               <form>
                 <div className="form-price">

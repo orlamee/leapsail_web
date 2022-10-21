@@ -16,6 +16,7 @@ import { unregister as unregisterServiceWorker } from './js/registerServiceWorke
 import AccountSetup from './pages/investment-account';
 import Success from './pages/invest-success';
 import Contact from './pages/contact';
+import ConsultationForm from './pages/consultationForm';
 unregisterServiceWorker();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -36,6 +37,7 @@ root.render(
       <Route path="/account-setup" element={<AccountSetup />}></Route>
       <Route path="/success" element={<Success />}></Route>
       <Route path="/consultation" element={<Contact/>}></Route>
+      <Route path="/consultation-form" element={<ConsultationForm/>}></Route>
     </Routes>
   </BrowserRouter>
 );

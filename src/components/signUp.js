@@ -41,8 +41,8 @@ function SignUp() {
         setLoading(false);
       } catch (error) {
         setLoading(false);
-        // Swal.fire(error.response.data.message);
-        // console.log(error.response.data.message);
+        Swal.fire(error.response.data.message);
+        console.log(error.response.data.message);
         console.log(error);
       }
     } else {

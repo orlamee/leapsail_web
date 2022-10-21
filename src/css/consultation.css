@@ -66,3 +66,31 @@
   font-weight: 500;
   color: #2E3444;
 }
+
+.plans h6 {
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #2E3444;
+}
+
+.header-radio {
+  font-size: 20px;
+  color: #2E3444;
+  font-weight: 700;
+}
+
+.custom-radio {
+  border-radius: 50%!important;
+  padding: 15px!important;
+}
+
+.radio-container {
+  margin-left: 24px;
+}
+
+.form-price {
+  padding: 60px 30px;
+  background-color: #f3f3f3;
+  border-radius: 40px;
+}

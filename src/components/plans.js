@@ -14,7 +14,7 @@ function Plans() {
         <div className="row mt-5">
           <div className="col-md-7 mb-2">
             <div className="row mb-5">
-              <div className="col-md-6 mb-3">
+              <div className="col-md-6 mb-5">
                 <div className="form-check">
                   <input className="form-check-input custom-radio" type="radio" name="flexRadioDefault"/>
                   <div className="radio-container">
@@ -26,7 +26,7 @@ function Plans() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 mb-3">
+              <div className="col-md-6 mb-5">
                 <div className="form-check">
                   <input className="form-check-input custom-radio" type="radio" name="flexRadioDefault"/>
                   <div className="radio-container">
@@ -40,7 +40,7 @@ function Plans() {
               </div>
             </div>
             <div className="row">
-              <div className="col-md-6 mb-3">
+              <div className="col-md-6 mb-5">
                 <div className="form-check">
                   <input className="form-check-input custom-radio" type="radio" name="flexRadioDefault"/>
                   <div className="radio-container">
@@ -52,7 +52,7 @@ function Plans() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 mb-3">
+              <div className="col-md-6 mb-5">
                 <div className="form-check">
                   <input className="form-check-input custom-radio" type="radio" name="flexRadioDefault"/>
                   <div className="radio-container">

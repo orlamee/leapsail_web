@@ -29,7 +29,7 @@ function ThirdLayer() {
                   <div className="col-md-6 mt-3">
                     <label className="form-label">Text (Notification)</label>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-md-3 mb-2">
                     <Link className='btn brand-bg text-white px-5 py-3 rounded-pill brand-bg text-white fs-6' to="/">Email</Link>
                   </div>
                   <div className="col-md-3">

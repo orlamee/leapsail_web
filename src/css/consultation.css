@@ -35,3 +35,34 @@
   font-weight: 400;
   line-height: 25px;
 }
+
+.reachus {
+  padding: 90px 0px;
+  background-color: #f3f3f3;
+}
+
+.reachus h3 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 500;
+  color: #000;
+}
+
+.reachus h6 {
+  font-size: 20px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #000;
+} 
+
+.plans {
+  background-color: #fff;
+  padding: 90px 20px;
+}
+
+.plans h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 500;
+  color: #2E3444;
+}

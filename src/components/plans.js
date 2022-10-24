@@ -22,7 +22,7 @@ function Plans() {
                       Regular Service
                     </label>
                     <h6 className="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                    <a className='brand-bg text-white px-4 py-2 fs-6 rounded-pill' href="#">Request</a>
+                    <a className='brand-bg text-white px-4 py-2 fs-6 rounded-pill' href="/consultation-form/call">Request</a>
                   </div>
                 </div>
               </div>

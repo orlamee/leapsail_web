@@ -37,7 +37,8 @@ root.render(
       <Route path="/account-setup" element={<AccountSetup />}></Route>
       <Route path="/success" element={<Success />}></Route>
       <Route path="/consultation" element={<Contact/>}></Route>
-      <Route path="/consultation-form" element={<ConsultationForm/>}></Route>
+      <Route path="/consultation-form/call" element={<ConsultationForm/>}></Route>
+      <Route path="/consultation-form/office" element={<ConsultationForm/>}></Route>
     </Routes>
   </BrowserRouter>
 );

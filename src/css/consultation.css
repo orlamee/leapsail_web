@@ -98,3 +98,45 @@
 .consultationform {
   padding: 70px 50px;
 }
+
+.call h3 {
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: 500;
+  color: #000;
+}
+
+.call h6 {
+  font-size: 20px;
+  line-height: 60px;
+  font-weight: 500;
+  color: #000;
+} 
+
+.officialform {
+  padding: 70px 50px;
+  margin: 90px 10px 50px 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+
+.aos {
+  background-color: #f3f3f3;
+  padding: 90px 20px;
+}
+
+.aos h3 {
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: 500;
+  color: #000;
+}
+
+.icon h6 {
+  color: #2E3444;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 35px;
+}

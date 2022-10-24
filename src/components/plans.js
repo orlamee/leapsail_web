@@ -21,8 +21,8 @@ function Plans() {
                     <label className="form-check-label header-radio" htmlFor="flexRadioDefault1">
                       Regular Service
                     </label>
-                    <h6 className="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="#">Request</a>
+                    <h6 className="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
+                    <a className='brand-bg text-white px-4 py-2 fs-6 rounded-pill' href="#">Request</a>
                   </div>
                 </div>
               </div>
@@ -33,8 +33,8 @@ function Plans() {
                     <label className="form-check-label header-radio" htmlFor="flexRadioDefault1">
                       VIP Service - <span style={{color: "#E55425"}}>N12,345</span>
                     </label>
-                    <h6 className="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="#">Upgrade</a>
+                    <h6 className="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
+                    <a className='brand-bg text-white px-4 py-2 fs-6 rounded-pill' href="#">Upgrade</a>
                   </div>
                 </div>
               </div>
@@ -47,8 +47,8 @@ function Plans() {
                     <label className="form-check-label header-radio" htmlFor="flexRadioDefault1">
                       Premium Service - <span style={{color: "#E55425"}}>N12,345</span>
                     </label>
-                    <h6 className="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="#">Upgrade</a>
+                    <h6 className="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
+                    <a className='brand-bg text-white px-4 py-2 fs-6 rounded-pill' href="#">Upgrade</a>
                   </div>
                 </div>
               </div>
@@ -59,8 +59,8 @@ function Plans() {
                     <label className="form-check-label header-radio" htmlFor="flexRadioDefault1" >
                       Gbas Gbos - <span style={{color: "#E55425"}}>N12,345</span>
                     </label>
-                    <h6 className="my-3">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
-                    <a className='btn brand-bg text-white px-4 fs-6 rounded-pill' href="#">Upgrade</a>
+                    <h6 className="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing</h6>
+                    <a className='brand-bg text-white px-4 py-2 fs-6 rounded-pill' href="#">Upgrade</a>
                   </div>
                 </div>
               </div>

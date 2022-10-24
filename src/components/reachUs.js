@@ -20,7 +20,7 @@ function ReachUs() {
             consectetur adipiscing</p>
           </div>
           <div className="col-md-3 text-center mt-2">
-            <img src={audiences} alt="" className="img-fluid" width={176}/>
+            <Link to="/consultation-form/office"><img src={audiences} alt="" className="img-fluid" width={176}/></Link>
             <h6>Audience with us</h6>
             <p>Lorem ipsum dolor sit amet, 
             consectetur adipiscing</p>

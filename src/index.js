@@ -17,6 +17,7 @@ import AccountSetup from './pages/investment-account';
 import Success from './pages/invest-success';
 import Contact from './pages/contact';
 import ConsultationForm from './pages/consultationForm';
+import Office from './pages/consultatonFormOffice';
 unregisterServiceWorker();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -38,7 +39,7 @@ root.render(
       <Route path="/success" element={<Success />}></Route>
       <Route path="/consultation" element={<Contact/>}></Route>
       <Route path="/consultation-form/call" element={<ConsultationForm/>}></Route>
-      <Route path="/consultation-form/office" element={<ConsultationForm/>}></Route>
+      <Route path="/consultation-form/office" element={<Office/>}></Route>
     </Routes>
   </BrowserRouter>
 );

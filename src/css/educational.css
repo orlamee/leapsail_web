@@ -1,0 +1,74 @@
+@media (min-width: 992px){
+  .edu-right {
+    background-image: url("../img/ed.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 374px 0;
+  }
+}
+
+@media (max-width: 767.98px){
+  .edu-right {
+    background-image: url("../img/ed.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+  }
+}
+
+@media (min-width: 992px){
+  .edu-left {
+    padding: 224px 100px;
+  }
+}
+
+@media (max-width: 767.98px){
+  .edu-left {
+    padding: 150px 20px 0px 20px;
+  }
+}
+
+.edu h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #2E3444;
+}
+
+.edu p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #2E3444;
+}
+
+.bg-purple {
+  background-color: #B277B1;
+  border: #B277B1;
+  font-size: 14px!important;
+}
+
+.bg-red {
+  background-color: #E55425;
+  border: #E55425;
+  font-size: 14px!important;
+}
+
+.bg-sky {
+  background-color: #91B3FA;
+  border: #91B3FA;
+  font-size: 14px!important;
+}
+
+.bg-blue {
+  background-color: #3D85AD;
+  border: #3D85AD;
+  font-size: 14px!important;
+}
+
+.button-groups {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}

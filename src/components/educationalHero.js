@@ -17,7 +17,7 @@ function HeroEdu() {
           <div className="col-md-7 edu-right"></div>
         </div>
       </div>
-      <div className="container button-groups">
+      <div className="container button-groups desktop">
         <div className="row justify-content-center">
           <div className="col-md-9 text-center">
             <div className="d-flex flex-row mb-3">

@@ -108,7 +108,7 @@ function SignUp() {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col mb-4">
+                    <div className="col-12 col-md-6 mb-4">
                       <input
                         id="password"
                         className="form-control"
@@ -120,7 +120,7 @@ function SignUp() {
                         onChange={(e) => setPassword(e.target.value)}
                       />
                     </div>
-                    <div className="col mb-4">
+                    <div className="col-12 col-md-6 mb-4">
                       <input
                         id="passwordconfirm"
                         className="form-control"

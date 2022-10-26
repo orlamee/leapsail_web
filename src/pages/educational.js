@@ -6,6 +6,8 @@ import HeroEdu from "../components/educationalHero";
 import Studies from "../components/wheretoStudy";
 import SuggestedProgrammes from "../components/suggestedProgrammes";
 import Canada from "../components/canadaConsidered";
+import EduWorks from "../components/eduHowItWorks";
+import Campuses from "../components/campuses";
 
 function Educational() {
   return (
@@ -15,6 +17,8 @@ function Educational() {
       <Studies/>
       <SuggestedProgrammes/>
       <Canada/>
+      <EduWorks/>
+      <Campuses/>
       <Footer/>
     </div>
   )

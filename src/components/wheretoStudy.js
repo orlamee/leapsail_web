@@ -520,7 +520,17 @@ function Studies() {
                 </div>
                 <div className="col-sm-4">
                   <label>Duration</label>
-                 <input type="date" className="form-control" />
+                  <select className="form-select">
+                    <option defaultValue>Duration</option>
+                    <option value="3">3 Months</option>
+                    <option value="4">4 Months</option>
+                    <option value="6">6 Months</option>
+                    <option value="10">10 Months</option>
+                    <option value="12">12 Months</option>
+                    <option value="18">18 Months</option>
+                    <option value="24">24 Months</option>
+                  </select>
+                 {/* <input type="date" className="form-control" /> */}
                 </div>
               </div>
               <div className="row justify-content-center search-btn">

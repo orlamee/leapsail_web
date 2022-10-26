@@ -86,16 +86,26 @@ function SignUp() {
                       />
                     </div>
                   </div>
-
-                  <div className="mb-4">
-                    <input
-                      className="form-control"
-                      type="email"
-                      placeholder="Email Address"
-                      required
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
+                  <div className="row">
+                    <div className="col-12 col-md-6 mb-4">
+                      <input
+                        className="form-control"
+                        type="email"
+                        placeholder="Email Address"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </div>
+                    <div className="col-12 col-md-6 mb-4">
+                      <input
+                        className="form-control"
+                        type="tel"
+                        // maxLength="20"
+                        placeholder="Phone Number"
+                        required
+                      />
+                    </div>
                   </div>
                   <div className="row">
                     <div className="col mb-4">

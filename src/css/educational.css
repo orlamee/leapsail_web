@@ -108,3 +108,38 @@ h2 {
 .campuses {
   padding: 90px 20px;
 }
+
+.london-header {
+  background-image: url("../img/header-school.png");
+  padding: 200px 0px;
+  margin-top: 80px;
+}
+
+.london-section {
+  padding: 60px 10px;
+}
+
+.london-section h2 {
+  color: #2E3444;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.bi-geo-alt-fill {
+  color: #f6b736;
+}
+
+.london-section h3 {
+  color: #2E3444;
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.loc {
+  color: #2E3444;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 400;
+}

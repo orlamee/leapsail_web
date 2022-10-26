@@ -3,6 +3,7 @@ import React from "react";
 import rgu from "../img/rgu.png";
 import hull from "../img/hull.png";
 import coventry from "../img/coventry.png";
+import { Link } from "react-router-dom";
 
 function Campuses () {
   return (
@@ -15,7 +16,7 @@ function Campuses () {
         </div>
         <div className="row mt-5 programmes justify-content-center">
           <div className="col-md-3 col-6 mb-3">
-            <img src={rgu} alt="" className="img-fluid mb-2" />
+            <Link to="/educational/london-university"><img src={rgu} alt="" className="img-fluid mb-2" /></Link>
             <p>London University</p>
           </div>
           <div className="col-md-3 col-6 mb-3">

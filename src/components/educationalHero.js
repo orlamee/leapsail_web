@@ -27,10 +27,10 @@ function HeroEdu() {
               <div className="p-2">
                 <a className='bg-red text-white px-5 fs-6 py-3 rounded-pill' href="#">Courses</a>
               </div>
-              <div class="p-2">
+              <div className="p-2">
                 <a className='bg-sky text-white px-5 fs-6 py-3 rounded-pill' href="#">Programme Type</a>
               </div>
-              <div class="p-2">
+              <div className="p-2">
                 <a className='bg-blue text-white px-5 fs-6 py-3 rounded-pill' href="#">Programme Type</a>
               </div>
             </div>

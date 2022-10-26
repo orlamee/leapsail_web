@@ -19,6 +19,7 @@ import Contact from './pages/contact';
 import ConsultationForm from './pages/consultationForm';
 import Office from './pages/consultatonFormOffice';
 import Educational from './pages/educational';
+import LondonUniversity from './pages/londonUniversity';
 unregisterServiceWorker();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -42,6 +43,7 @@ root.render(
       <Route path="/consultation-form/call" element={<ConsultationForm/>}></Route>
       <Route path="/consultation-form/office" element={<Office/>}></Route>
       <Route path="/educational" element={<Educational/>}></Route>
+      <Route path="/educational/london-university" element={<LondonUniversity/>}></Route>
     </Routes>
   </BrowserRouter>
 );

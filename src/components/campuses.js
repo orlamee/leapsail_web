@@ -14,19 +14,19 @@ function Campuses () {
           </div>
         </div>
         <div className="row mt-5 programmes justify-content-center">
-          <div className="col-md-3 mb-3">
+          <div className="col-md-3 col-6 mb-3">
             <img src={rgu} alt="" className="img-fluid mb-2" />
-            <p>Robert Gordon</p>
+            <p>London University</p>
           </div>
-          <div className="col-md-3 mb-3">
+          <div className="col-md-3 col-6 mb-3">
             <img src={hull} alt="" className="img-fluid mb-2" />
             <p>Hull City</p>
           </div>
-          <div className="col-md-3 mb-3">
+          <div className="col-md-3 col-6 mb-3">
             <img src={coventry} alt="" className="img-fluid mb-2" />
             <p>Arden</p>
           </div>
-          <div className="col-md-3 mb-3">
+          <div className="col-md-3 col-6 mb-3">
             <img src={rgu} alt="" className="img-fluid mb-2" />
             <p>Coventry</p>
           </div>

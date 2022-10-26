@@ -17,20 +17,25 @@ function HeroEdu() {
           <div className="col-md-7 edu-right"></div>
         </div>
       </div>
-      <div className="container button-groups desktop">
+      <div className="container button-groups">
         <div className="row justify-content-center">
-          <div className="col-md-3 col-6 text-center mb-5">
-            <a className='bg-purple text-white px-5 fs-6 py-3 rounded-pill' href="#">List of Schools</a>
+          <div className="col-md-9 text-center">
+            <div className="d-flex flex-row mb-3">
+              <div className="p-2">
+                <a className='bg-purple text-white px-5 fs-6 py-3 rounded-pill' href="#">List of Schools</a>
+              </div>
+              <div className="p-2">
+                <a className='bg-red text-white px-5 fs-6 py-3 rounded-pill' href="#">Courses</a>
+              </div>
+              <div class="p-2">
+                <a className='bg-sky text-white px-5 fs-6 py-3 rounded-pill' href="#">Programme Type</a>
+              </div>
+              <div class="p-2">
+                <a className='bg-blue text-white px-5 fs-6 py-3 rounded-pill' href="#">Programme Type</a>
+              </div>
+            </div>
           </div>
-          <div className="col-md-3 col-6 text-center mb-5">
-            <a className='bg-red text-white px-5 fs-6 py-3 rounded-pill' href="#">Courses</a>
-          </div>
-          <div className="col-md-3 col-6 text-center mb-5">
-            <a className='bg-sky text-white px-5 fs-6 py-3 rounded-pill' href="#">Programme Type</a>
-          </div>
-          <div className="col-md-3 col-6 text-center mb-5">
-            <a className='bg-blue text-white px-5 fs-6 py-3 rounded-pill' href="#">Programme Type</a>
-          </div>
+          
         </div>
       </div>
       <div className="container button-groups mobile">

@@ -204,12 +204,13 @@ function ConsultForm() {
               </div>
             </div>
             <div className="col-8 text-center mb-5">
-              <a
+              <button
+                type="submit"
                 className="brand-bg text-white px-5 fs-6 py-3 rounded-pill"
                 href="#"
               >
                 Schedule
-              </a>
+              </button>
             </div>
           </div>
         </div>

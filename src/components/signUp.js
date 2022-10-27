@@ -26,6 +26,7 @@ function SignUp() {
             firstName,
             lastName,
             email,
+            phoneNumber,
             password,
           }
         );

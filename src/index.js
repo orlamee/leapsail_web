@@ -20,6 +20,7 @@ import ConsultationForm from './pages/consultationForm';
 import Office from './pages/consultatonFormOffice';
 import Educational from './pages/educational';
 import LondonUniversity from './pages/londonUniversity';
+import Tours from './pages/tours';
 unregisterServiceWorker();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -44,6 +45,7 @@ root.render(
       <Route path="/consultation-form/office" element={<Office/>}></Route>
       <Route path="/educational" element={<Educational/>}></Route>
       <Route path="/educational/london-university" element={<LondonUniversity/>}></Route>
+      <Route path="/tours" element={<Tours/>}></Route>
     </Routes>
   </BrowserRouter>
 );

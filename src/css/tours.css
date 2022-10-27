@@ -1,0 +1,37 @@
+.tours-section {
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+.bg-tours {
+  background-image: url("../img/tours-hero.png");
+  /* background-position: 50%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+}
+
+.bg-tours h2 {
+  font-size: 40px;
+  line-height: 50px;
+  color: #2E3444;
+  font-weight: 700;
+}
+
+.bg-tours p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #2E3444;
+  font-weight: 400;
+}
+
+.form-bg {
+  background-color: #fff;
+  padding: 40px 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+.searchbox {
+  margin-top: 70px;
+}

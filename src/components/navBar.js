@@ -114,7 +114,7 @@ function Header() {
                         <div className="d-flex flex-row mb-2">
                           <div className='p-2'><img src={tours} alt="" className='img-fluid desktop'/> </div>
                           <div className='p-2 mt-2'>
-                            <h6>Tours</h6>
+                            <h6><Link to="/tours">Tours</Link></h6>
                           </div>
                         </div> 
                       </div>

@@ -181,7 +181,7 @@ function ConsultForm() {
                   type="text"
                   className="form-control"
                   value={fullname2}
-                  onChange={(e) => setFullName(e.target.value)}
+                  onChange={(e) => setFullName2(e.target.value)}
                 />
               </div>
               <div className="mb-3">

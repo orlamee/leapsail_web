@@ -1,10 +1,40 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
-import callcenter from "../img/callcenter.png";
+import React, { useState } from 'react';
+import callcenter from '../img/callcenter.png';
 
 function ConsultForm() {
+  const [fullname, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNuber] = useState('');
+  const [productType, setProductType] = useState('');
+  const [enquiryType, setEnquiryType] = useState('');
+  const [others, setOther] = useState('');
+  const [duration, setDuration] = useState('');
+  const [timeZone, setTimeZone] = useState('');
+  const [nameOfOrg, setNameOfOrg] = useState('');
+  const [fullname2, setFullName2] = useState('');
+  const [position, setPosition] = useState('');
+  const [email2, setEmail2] = useState('');
+
+  const handleSubmit = () => {
+    console.log({
+      fullname,
+      email,
+      phoneNumber,
+      productType,
+      enquiryType,
+      others,
+      duration,
+      timeZone,
+      nameOfOrg,
+      fullname2,
+      position,
+      email2,
+    });
+  };
+
   return (
-    <form className="login-form">
+    <form className="login-form" onSubmit={handleSubmit}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-7">
@@ -13,19 +43,37 @@ function ConsultForm() {
                 <div>
                   <div className="mb-3">
                     <label className="form-label">Full Name</label>
-                    <input type="text" className="form-control"/>
+                    <input
+                      type="text"
+                      className="form-control"
+                      value={fullname}
+                      onChange={(e) => setFullName(e.target.value)}
+                    />
                   </div>
                   <div className="mb-3">
                     <label className="form-label">Email</label>
-                    <input type="email" className="form-control"/>
+                    <input
+                      type="email"
+                      className="form-control"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
                   </div>
                   <div className="mb-3">
                     <label className="form-label">Phone</label>
-                    <input type="tel" className="form-control"/>
+                    <input
+                      type="tel"
+                      className="form-control"
+                      value={phoneNumber}
+                      onChange={(e) => setPhoneNuber(e.target.value)}
+                    />
                   </div>
                   <div className="mb-3">
                     <label className="form-label">Product Type</label>
-                    <select className="form-select">
+                    <select
+                      className="form-select"
+                      onChange={(e) => setProductType(e.target.value)}
+                    >
                       <option value="1">Visa</option>
                       <option value="2">Investment</option>
                       <option value="3">Ticketing</option>
@@ -37,7 +85,10 @@ function ConsultForm() {
                   </div>
                   <div className="mb-3">
                     <label className="form-label">Enquiry Type</label>
-                    <select className="form-select">
+                    <select
+                      className="form-select"
+                      onChange={(e) => setEnquiryType(e.target.value)}
+                    >
                       <option value="1">Vistor Visa</option>
                       <option value="2">POF</option>
                       <option value="2">POE</option>
@@ -45,7 +96,11 @@ function ConsultForm() {
                   </div>
                   <div className="mb-3">
                     <label className="form-label">Other, please specify</label>
-                    <input type="text" className="form-control"/>
+                    <input
+                      type="text"
+                      className="form-control"
+                      onChange={(e) => setOther(e.target.value)}
+                    />
                   </div>
                 </div>
               </div>
@@ -57,7 +112,12 @@ function ConsultForm() {
             </div>
             <div className="row justify-content-center my-5 call">
               <div className="col-md-6 text-center">
-                <img src={callcenter} alt="" className="img-fluid" width={185}/>
+                <img
+                  src={callcenter}
+                  alt=""
+                  className="img-fluid"
+                  width={185}
+                />
                 <h6 className="mt-3">Call on the provided number</h6>
               </div>
             </div>
@@ -68,10 +128,15 @@ function ConsultForm() {
         <div className="container">
           <div className="row justify-content-center mx-2">
             <div className="col-md-6 call">
-              <h3 className="mb-4 text-center">Choose a date and time for consultation</h3>
+              <h3 className="mb-4 text-center">
+                Choose a date and time for consultation
+              </h3>
               <div className="mb-3">
                 <label className="form-label">Duration</label>
-                <select className="form-select">
+                <select
+                  className="form-select"
+                  onChange={(e) => setDuration(e.target.value)}
+                >
                   <option value="1">5 Minutes</option>
                   <option value="2">10 Minutes</option>
                   <option value="3">30 Minutes</option>
@@ -79,13 +144,16 @@ function ConsultForm() {
               </div>
               <div className="mb-3">
                 <label className="form-label">Time Zone</label>
-                <select className="form-select">
+                <select
+                  className="form-select"
+                  onChange={(e) => setTimeZone(e.target.value)}
+                >
                   <option value="1">Nigeria, Lagos (GMT +1:00)</option>
                 </select>
               </div>
               <div className="mb-3">
                 <label className="form-label">Date/Time</label>
-                <input type="datetime-local" className="form-control"/>
+                <input type="datetime-local" className="form-control" />
               </div>
             </div>
           </div>
@@ -100,29 +168,54 @@ function ConsultForm() {
               </div>
               <div className="mb-3">
                 <label className="form-label">Name of organization</label>
-                <input type="text" className="form-control"/>
+                <input
+                  type="text"
+                  className="form-control"
+                  value={nameOfOrg}
+                  onChange={(e) => setNameOfOrg(e.target.value)}
+                />
               </div>
               <div className="mb-3">
                 <label className="form-label">Full Name</label>
-                <input type="text" className="form-control"/>
+                <input
+                  type="text"
+                  className="form-control"
+                  value={fullname2}
+                  onChange={(e) => setFullName(e.target.value)}
+                />
               </div>
               <div className="mb-3">
                 <label className="form-label">Position</label>
-                <input type="text" className="form-control"/>
+                <input
+                  type="text"
+                  className="form-control"
+                  value={position}
+                  onChange={(e) => setPosition(e.target.value)}
+                />
               </div>
               <div className="mb-3">
                 <label className="form-label">Email</label>
-                <input type="email" className="form-control"/>
+                <input
+                  type="email"
+                  className="form-control"
+                  value={email2}
+                  onChange={(e) => setEmail2(e.target.value)}
+                />
               </div>
             </div>
             <div className="col-8 text-center mb-5">
-              <a className='brand-bg text-white px-5 fs-6 py-3 rounded-pill' href="#">Schedule</a>
+              <a
+                className="brand-bg text-white px-5 fs-6 py-3 rounded-pill"
+                href="#"
+              >
+                Schedule
+              </a>
             </div>
           </div>
         </div>
       </section>
     </form>
-  )
+  );
 }
 
 export default ConsultForm;

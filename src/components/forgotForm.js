@@ -12,7 +12,7 @@ function ForgotForm() {
 
     try {
       const { data } = await axios.post(
-        'https://lps-ng-app.herokuapp.com/api/user/forgot-password',
+        'https://lps-ng-app.herokuapp.com/leapsail/api/user/forgot-password',
         {
           email,
         }

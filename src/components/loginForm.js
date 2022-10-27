@@ -19,7 +19,7 @@ function LoginForm() {
 
     try {
       const { data } = await axios.post(
-        'https://lps-ng-app.herokuapp.com/api/auth/login',
+        'https://lps-ng-app.herokuapp.com/leapsail/api/auth/login',
         {
           email,
           password,

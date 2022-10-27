@@ -9,6 +9,7 @@ function SignUp() {
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [phoneNumber, setPhoneNuber] = useState('');
   const [repeatPassword, setRepeatPassword] = useState('');
 
   const [loading, setLoading] = useState(false);
@@ -20,7 +21,7 @@ function SignUp() {
     if (password === repeatPassword) {
       try {
         const { data } = await axios.post(
-          'https://lps-ng-app.herokuapp.com/api/auth/register',
+          'https://lps-ng-app.herokuapp.com/leapsail/api/auth/register',
           {
             firstName,
             lastName,
@@ -104,6 +105,8 @@ function SignUp() {
                         // maxLength="20"
                         placeholder="Phone Number"
                         required
+                        value={phoneNumber}
+                        onChange={(e) => setPhoneNuber(e.target.value)}
                       />
                     </div>
                   </div>

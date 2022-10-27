@@ -19,7 +19,7 @@ function ChangePassword() {
     if (password === confirmPassword) {
       try {
         const { data } = await axios.post(
-          `https://lps-ng-app.herokuapp.com/api/user/reset-password/${id}`,
+          `https://lps-ng-app.herokuapp.com/leapsail/api/user/reset-password/${id}`,
           {
             password,
           }

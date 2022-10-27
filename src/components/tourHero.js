@@ -281,7 +281,7 @@ function TourHero() {
                   <label>End Date</label>
                   <input type="date" className="form-control" />
                 </div>
-                <div className="col-md-3" style={{marginTop: "47px"}}>
+                <div className="col-md-3" style={{marginTop: "62px"}}>
                   <a className='brand-bg text-white px-5 fs-6 py-3 rounded-pill' href="#">Search</a>
                 </div>
               </div>

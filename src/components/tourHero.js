@@ -273,11 +273,11 @@ function TourHero() {
                     <option value="ZW">Zimbabwe</option>
                   </select>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 desktop">
                   <label>Start Date</label>
                   <input type="date" className="form-control" />
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 desktop">
                   <label>End Date</label>
                   <input type="date" className="form-control" />
                 </div>

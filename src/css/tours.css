@@ -59,3 +59,19 @@
 .title-image p {
   margin-bottom: 0px;
 }
+
+.tour-divider {
+  background-color: #C4C4C4;
+  padding: 90px 20px;
+}
+
+.tour-divider h3 {
+  color: #2E3444;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.mt-10 {
+  padding-top: 130px;
+}

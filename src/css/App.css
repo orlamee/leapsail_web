@@ -408,3 +408,16 @@ body {
 .errorpage {
   padding: 150px 20px;
 }
+
+.errorpage h1 {
+  color: #2E3444;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.errorpage p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+}

@@ -67,7 +67,7 @@ function GetStarted() {
         </div> */}
         <div className="row justify-content-center btn-padding">
           <div className="col-md-6 text-center">
-            <a className='btn brand-bg text-white px-5 py-3 rounded-pill' href="/">Get Started</a>
+            <a className='btn brand-bg text-white px-5 py-3 rounded-pill' href="/register">Get Started</a>
           </div>
         </div>
       </div>

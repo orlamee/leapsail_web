@@ -405,4 +405,6 @@ body {
   }
 }
 
-
+.errorpage {
+  padding: 150px 20px;
+}

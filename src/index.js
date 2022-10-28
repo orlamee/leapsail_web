@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/login';
 import Dashboard from './pages/dashboard';
 import ForgotPassword from './pages/forgotPassword';
@@ -21,6 +21,7 @@ import Office from './pages/consultatonFormOffice';
 import Educational from './pages/educational';
 import LondonUniversity from './pages/londonUniversity';
 import Tours from './pages/tours';
+import Error from './pages/error404';
 unregisterServiceWorker();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -46,6 +47,8 @@ root.render(
       <Route path="/educational" element={<Educational/>}></Route>
       <Route path="/educational/london-university" element={<LondonUniversity/>}></Route>
       <Route path="/tours" element={<Tours/>}></Route>
+      <Route path="/404" element={<Error/>}></Route>
+      <Route path="*" element={ <Navigate to="/404" replace />}></Route>
     </Routes>
   </BrowserRouter>
 );

@@ -21,7 +21,7 @@ function TourHero() {
           <div className="col-md-10 form-bg">
             <form>
               <div className="row g-3">
-                <div className="col-md-3">
+                <div className="col-md-3 col-12">
                   <label>Where you want to go?</label>
                   <select className="form-select">
                     <option defaultValue>Destination</option>
@@ -273,11 +273,11 @@ function TourHero() {
                     <option value="ZW">Zimbabwe</option>
                   </select>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 col-12">
                   <label>Start Date</label>
                   <input type="date" className="form-control" />
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 col-12">
                   <label>End Date</label>
                   <input type="date" className="form-control" />
                 </div>

@@ -5,6 +5,9 @@ import TourHero from "../components/tourHero";
 import Footer from "../components/footer";
 import FeaturesTours from "../components/featuresTours";
 import VisitTours from "../components/visitPlaces";
+import WhyLeapsail from "../components/whyLeapsail";
+import ToursDividers from "../components/toursDivider";
+import VisitHotels from "../components/visitHotels";
 
 
 function Tours() {
@@ -14,6 +17,9 @@ function Tours() {
       <TourHero/>
       <FeaturesTours/>
       <VisitTours/>
+      <ToursDividers/>
+      <VisitHotels/>
+      <WhyLeapsail/>
       <Footer/>
     </div>
   )

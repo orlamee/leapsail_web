@@ -18,7 +18,7 @@ function TourHero() {
       </div>
       <div className="container searchbox">
         <div className="row justify-content-center">
-          <div className="col-md-10 text-center form-bg">
+          <div className="col-md-10 form-bg">
             <form>
               <div className="row g-3">
                 <div className="col-md-3">

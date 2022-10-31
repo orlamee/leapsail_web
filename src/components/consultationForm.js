@@ -22,7 +22,7 @@ function ConsultForm() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        'https://lps-ng-app.herokuapp.com/leapsail/api/contact/register',
+        'https://lps-ng-app.herokuapp.com/leapsail/api/contact/',
         {
           fullname,
           email,

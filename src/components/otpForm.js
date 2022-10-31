@@ -51,7 +51,9 @@ function OtpForm() {
                 <h6 className="mt-3 text-center">
                   We will send you a one time password on this Mobile Number
                 </h6>
-                <div className="text-center fw-bolder">{`+1${user?.phoneNumber}`}</div>
+                <div className="text-center fw-bolder">
+                  {user ? user.phoneNumber : 'XXXX XXX XXXX'}
+                </div>
                 <form className="my-4">
                   <div className="d-flex flex-row">
                     <div className="me-2">

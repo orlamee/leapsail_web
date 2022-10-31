@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import axios from 'axios';
 import React, { useState } from 'react';
 import callcenter from '../img/callcenter.png';
+import Swal from 'sweetalert2';
 
 function ConsultForm() {
   const [fullname, setFullName] = useState('');
@@ -16,21 +18,40 @@ function ConsultForm() {
   const [position, setPosition] = useState('');
   const [email2, setEmail2] = useState('');
 
-  const handleSubmit = () => {
-    console.log({
-      fullname,
-      email,
-      phoneNumber,
-      productType,
-      enquiryType,
-      others,
-      duration,
-      timeZone,
-      nameOfOrg,
-      fullname2,
-      position,
-      email2,
-    });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const { data } = await axios.post(
+        'https://lps-ng-app.herokuapp.com/leapsail/api/contact/register',
+        {
+          fullname,
+          email,
+          phoneNumber,
+          productType,
+          enquiryType,
+          others,
+          duration,
+          timeZone,
+          nameOfOrg,
+          fullname2,
+          position,
+          email2,
+        }
+      );
+
+      console.log(data);
+      Swal.fire({
+        icon: 'success',
+        title: 'Done.',
+        text: 'contact form submitted successfully',
+      });
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error.',
+        text: `${error.response.data.message}`,
+      });
+    }
   };
 
   return (

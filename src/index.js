@@ -22,6 +22,7 @@ import Educational from './pages/educational';
 import LondonUniversity from './pages/londonUniversity';
 import Tours from './pages/tours';
 import Error from './pages/error404';
+import Otp from './pages/otp';
 unregisterServiceWorker();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -47,6 +48,7 @@ root.render(
       <Route path="/educational" element={<Educational/>}></Route>
       <Route path="/educational/london-university" element={<LondonUniversity/>}></Route>
       <Route path="/tours" element={<Tours/>}></Route>
+      <Route path="/otp" element={<Otp/>}></Route>
       <Route path="/404" element={<Error/>}></Route>
       <Route path="*" element={ <Navigate to="/404" replace />}></Route>
     </Routes>

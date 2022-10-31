@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 function OtpForm() {
   const { id } = useParams();
@@ -9,10 +10,16 @@ function OtpForm() {
     const get = async () => {
       try {
         const { data } = await axios.get(
-          `https://lps-ng-app.herokuapp.com/leapsail/api/user/find/${id}`
+          `https://lps-ng-app.herokuapp.com/leapsail/api/auth/send-otp/${id}`
         );
 
         console.log(data);
+
+        Swal.fire({
+          icon: 'success',
+          title: 'Mobile Verification.',
+          text: 'A verification code has been send to your number.',
+        });
       } catch (error) {
         console.log(error);
       }

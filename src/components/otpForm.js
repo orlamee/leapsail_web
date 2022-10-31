@@ -5,9 +5,21 @@ import Swal from 'sweetalert2';
 
 function OtpForm() {
   const { id } = useParams();
+  const [user, setUser] = useState('');
 
   useEffect(() => {
-    const get = async () => {
+    const getUser = async () => {
+      try {
+        const { data } = await axios.get(
+          `https://lps-ng-app.herokuapp.com/leapsail/api/user/find/${id}`
+        );
+        setUser(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getUser();
+    const sendOTP = async () => {
       try {
         const { data } = await axios.get(
           `https://lps-ng-app.herokuapp.com/leapsail/api/auth/send-otp/${id}`
@@ -25,7 +37,7 @@ function OtpForm() {
       }
     };
 
-    get();
+    sendOTP();
   }, [id]);
 
   return (
@@ -39,7 +51,7 @@ function OtpForm() {
                 <h6 className="mt-3 text-center">
                   We will send you a one time password on this Mobile Number
                 </h6>
-                <div className="text-center fw-bolder">234040348483</div>
+                <div className="text-center fw-bolder">{`+1${user?.phoneNumber}`}</div>
                 <form className="my-4">
                   <div className="d-flex flex-row">
                     <div className="me-2">

@@ -24,7 +24,6 @@ function Invest() {
             </div>
           </div>
         </div>
-
       </div>
       <LoginFooter/>
     </section>

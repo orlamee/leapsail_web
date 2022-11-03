@@ -43,16 +43,10 @@ root.render(
       <Route path="/account-setup" element={<AccountSetup />}></Route>
       <Route path="/success" element={<Success />}></Route>
       <Route path="/consultation" element={<Contact />}></Route>
-      <Route
-        path="/consultation-form/call"
-        element={<ConsultationForm />}
-      ></Route>
+      <Route path="/consultation-form/call" element={<ConsultationForm />}></Route>
       <Route path="/consultation-form/office" element={<Office />}></Route>
       <Route path="/educational" element={<Educational />}></Route>
-      <Route
-        path="/educational/london-university"
-        element={<LondonUniversity />}
-      ></Route>
+      <Route path="/educational/london-university" element={<LondonUniversity />}></Route>
       <Route path="/tours" element={<Tours />}></Route>
       <Route path="/otp/:id" element={<Otp />}></Route>
       <Route path="/404" element={<Error />}></Route>

@@ -1,30 +1,19 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
+import zan from "../img/zan.png";
+import rate from "../img/ratings.svg";
 
-function TourHero() {
+function SearchTour() {
   return (
-    <section className="tours-section">
+    <section className="search-tours">
       <div className="container">
-        <div className="row bg-tours">
-          <div className="col-md-6">
-            <h2 className="mb-3">Lorem ipsum dolor sit 
-            amet, consectetur 
-            adipiscing</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur
-            Lorem ipsum dolor sit amet, consectetur 
-            adipiscing</p>
-          </div>
-        </div>
-      </div>
-      <div className="container searchbox">
-        <div className="row justify-content-center">
-          <div className="col-md-10 form-bg">
-            <form>
-              <div className="row g-3">
-                <div className="col-md-3">
-                  <label>Where you want to go?</label>
+        <div className="row">
+          <div className="col-md-3 mb-3">
+            <div className="search-form">
+              <form>
+                <div className="mb-3">
+                  <label className="form-label">Where</label>
                   <select className="form-select">
-                    <option defaultValue>Destination</option>
+                    <option defaultValue>Select Country</option>
                     <option value="AF">Afghanistan</option>
                     <option value="AX">&Aring;land Islands</option>
                     <option value="AL">Albania</option>
@@ -273,19 +262,158 @@ function TourHero() {
                     <option value="ZW">Zimbabwe</option>
                   </select>
                 </div>
-                <div className="col-md-3 desktop">
-                  <label>Start Date</label>
-                  <input type="date" className="form-control" />
+                <div className="mb-3">
+                  <label>When</label>
+                  <select className="form-select">
+                    <option defaultValue>When</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
                 </div>
-                <div className="col-md-3 desktop">
-                  <label>End Date</label>
-                  <input type="date" className="form-control" />
+                <div className="mb-3">
+                  <label>Interest</label>
+                  <select className="form-select">
+                    <option defaultValue>Interest</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
                 </div>
-                <div className="col-md-3" style={{marginTop: "62px"}}>
-                  <a className='brand-bg text-white px-5 fs-6 py-3 rounded-pill' href="/tours/search">Search</a>
+                <div className="mb-3">
+                  <label>Categories</label>
+                  <select className="form-select">
+                    <option defaultValue>Categories</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                </div>
+                <div className="mb-3">
+                  <label>Price</label>
+                  <select className="form-select">
+                    <option defaultValue>Price</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                </div>
+                <div className="mb-3">
+                  <label>Language</label>
+                  <select className="form-select">
+                    <option defaultValue>Language</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                </div>
+                <div className="mb-3">
+                  <label>Services</label>
+                  <select className="form-select">
+                    <option defaultValue>Services</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                </div>
+                <div className="mb-3">
+                  <label>Tour Type</label>
+                  <select className="form-select">
+                    <option defaultValue>Tour Type</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                </div>
+                <div className="mb-3">
+                  <label>Guide Type</label>
+                  <select className="form-select">
+                    <option defaultValue>Guide Type</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                </div>
+                <div className="mb-3">
+                  <label>Age Range</label>
+                  <select className="form-select">
+                    <option defaultValue>Age Range</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                </div>
+                <div className="mb-3">
+                  <label>Number of Travellers</label>
+                  <select className="form-select">
+                    <option defaultValue>Number of Travellers</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                </div>
+                <div className="mb-3">
+                  <label>Travel Style</label>
+                  <select className="form-select">
+                    <option defaultValue>Travel Style</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                </div>
+                <div className="mb-3">
+                  <label>Accomodation</label>
+                  <select className="form-select">
+                    <option defaultValue>Accomodation</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                </div>
+                <div className="mb-3">
+                  <label>Physical Rating</label>
+                  <select className="form-select">
+                    <option defaultValue>Physical Rating</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            
+          </div>
+          <div className="col-md-9">
+            <div className="row">
+              <div className="col-md-9">
+                <div className="d-flex flex-row mb-4">
+                  <img src={zan} alt="" className="img-fluid me-3"/>
+                  <div className="tour-title mt-3">
+                    <h3>Easter in Zanzibar</h3>
+                    <div className="d-flex flex-row mt-3">
+                      <i className="bi bi-geo-alt-fill me-2"></i>
+                      <p>25, Ahmed Bin Ahmad Avenue, Tanzania</p>
+                    </div>
+                    <img src={rate} alt="" className="img-fluid" />
+                  </div>
                 </div>
               </div>
-            </form>
+              <div className="col-md-3"></div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -293,4 +421,4 @@ function TourHero() {
   )
 }
 
-export default TourHero;
+export default SearchTour;

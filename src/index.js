@@ -23,6 +23,7 @@ import LondonUniversity from './pages/londonUniversity';
 import Tours from './pages/tours';
 import Error from './pages/error404';
 import Otp from './pages/otp';
+import InnerTour from './pages/searchTour';
 unregisterServiceWorker();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -48,6 +49,7 @@ root.render(
       <Route path="/educational" element={<Educational />}></Route>
       <Route path="/educational/london-university" element={<LondonUniversity />}></Route>
       <Route path="/tours" element={<Tours />}></Route>
+      <Route path="/tours/search" element={<InnerTour/>}></Route>
       <Route path="/otp/:id" element={<Otp />}></Route>
       <Route path="/404" element={<Error />}></Route>
       <Route path="*" element={<Navigate to="/404" replace />}></Route>

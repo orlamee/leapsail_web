@@ -1,18 +1,18 @@
-const User = require('../models/User.js');
-const handleError = require('../utils/error');
-const jwt = require('jsonwebtoken');
+const User = require("../models/User.js");
+const handleError = require("../utils/error");
+const jwt = require("jsonwebtoken");
 
-const bcrypt = require('bcrypt');
-const nodemailer = require('nodemailer');
+const bcrypt = require("bcrypt");
+const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
+  host: "smtp.gmail.com",
   port: 587,
   secure: false,
   requireTLS: true,
   auth: {
-    user: 'atuzierex0@gmail.com',
-    pass: 'rroekeylxsylmzqc',
+    user: "atuzierex0@gmail.com",
+    pass: "rroekeylxsylmzqc",
   },
 });
 
@@ -29,7 +29,7 @@ const getUsers = async (req, res, next) => {
 const getUser = async (req, res, next) => {
   try {
     const user = await User.findById(req.params.id);
-    if (!user) return next(handleError(404, 'user not found'));
+    if (!user) return next(handleError(404, "user not found"));
     res.status(200).json(user);
   } catch (error) {
     next(error);
@@ -52,7 +52,7 @@ const updateUser = async (req, res, next) => {
       next(error);
     }
   } else {
-    next(handleError(403, 'You can update only your account'));
+    next(handleError(403, "You can update only your account"));
   }
 };
 
@@ -61,12 +61,12 @@ const deleteUser = async (req, res, next) => {
     try {
       await User.findByIdAndDelete(req.params.id);
 
-      res.status(200).json('User has been deleted');
+      res.status(200).json("User has been deleted");
     } catch (error) {
       next(error);
     }
   } else {
-    next(handleError(403, 'You can delete only your account'));
+    next(handleError(403, "You can delete only your account"));
   }
 };
 
@@ -74,21 +74,21 @@ const forgetPassword = async (req, res, next) => {
   try {
     const user = await User.findOne({ email: req.body.email });
 
-    if (!user.verified) return next(handleError(404, 'This email is Invalid.'));
+    if (!user) return next(handleError(404, "This email is Invalid."));
 
     if (user) {
       const token = jwt.sign(
         { email: user.email, id: user._id },
         process.env.JWT,
-        { expiresIn: '15m' }
+        { expiresIn: "15m" }
       );
 
-      const link = `https://lps-ng-app.herokuapp.com/api/user/reset-password/${user._id}/${token}`;
+      const link = `https://lps-ng-app.herokuapp.com/leapsail/api/user/reset-password/${user._id}/${token}`;
 
       const mail = {
-        from: 'atuzierex0@gmail.com',
+        from: "atuzierex0@gmail.com",
         to: user.email,
-        subject: 'Reset Password',
+        subject: "Reset Password",
         html: `<p> Hi ${user.firstname} , Click the link to reset Password <a href=${link}>Reset Password</a> </p>`,
       };
 
@@ -96,13 +96,13 @@ const forgetPassword = async (req, res, next) => {
         if (err) {
           console.log(err);
         } else {
-          console.log('Mail has been sent ', info.response);
+          console.log("Mail has been sent ", info.response);
         }
       });
 
-      res.status(200).json('Check your email and reset password');
+      res.status(200).json("Check your email and reset password");
     } else {
-      next(handleError(403, 'This user does not exist'));
+      next(handleError(403, "This user does not exist"));
     }
   } catch (error) {
     next(error);
@@ -113,7 +113,7 @@ const resetPassword = async (req, res, next) => {
   const { id } = req.params;
 
   const user = await User.findOne({ _id: id });
-  if (!user) return next(handleError(404, 'User does not exist.'));
+  if (!user) return next(handleError(404, "User does not exist."));
 
   try {
     res.redirect(`https://leapsail-web.netlify.app/reset-password/${id}`);
@@ -126,7 +126,7 @@ const resetPassword2 = async (req, res, next) => {
   const { id } = req.params;
 
   const user = await User.findOne({ _id: id });
-  if (!user) return next(handleError(404, 'User does not exist.'));
+  if (!user) return next(handleError(404, "User does not exist."));
 
   try {
     const salt = bcrypt.genSaltSync(10);
@@ -137,7 +137,7 @@ const resetPassword2 = async (req, res, next) => {
     );
     res
       .status(200)
-      .json({ msg: 'User password has been rest', data: userData });
+      .json({ msg: "User password has been rest", data: userData });
   } catch (error) {
     next(error);
   }

@@ -51,7 +51,7 @@ const register = async (req, res, next) => {
       subject: "Leapsail Email verification",
       html: `<h2>${data.firstname}, Thanks for registering</h2>
       <h4>Please verify your email to continue</h4>
-      <a href="https://git.heroku.com/leapsail-africa.git/leapsail-africa.git/leapsail/api/auth/verify-email?token=${user.emailToken}">Verify your Email</a>`,
+      <a href="https://git.heroku.com/leapsail-africa.git/leapsail/api/auth/verify-email?token=${user.emailToken}">Verify your Email</a>`,
     };
 
     transporter.sendMail(mail, (err, info, next) => {

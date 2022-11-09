@@ -72,7 +72,7 @@ const verifyEmail = async (req, res, next) => {
     const token = req.query.token;
     const user = await User.findOne({ emailToken: token });
 
-    res.send(user);
+    res.send(token);
 
     // if (!user) {
     //   return next(handleError(404, "User does not exist."));

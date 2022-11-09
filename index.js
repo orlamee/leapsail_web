@@ -1,5 +1,7 @@
 const express = require("express");
+const app = express();
 const dotenv = require("dotenv");
+dotenv.config();
 const mongoose = require("mongoose");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
@@ -9,9 +11,6 @@ const userRoute = require("./routes/user.js");
 const contactRoute = require("./routes/contact.js");
 const employeeRoute = require("./routes/employee.js");
 const educationRoute = require("./routes/education.js");
-
-const app = express();
-dotenv.config();
 
 const connectDB = () => {
   mongoose

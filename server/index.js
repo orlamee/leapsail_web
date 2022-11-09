@@ -16,7 +16,7 @@ dotenv.config();
 const connectDB = () => {
   mongoose
     .connect(process.env.MONGO)
-    .then(() => console.log("DB connected ..."))
+    .then(() => console.log("DB connected."))
     .catch((err) => console.error(err));
 };
 
@@ -45,5 +45,5 @@ const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   connectDB();
-  console.log("Server connected ...");
+  console.log("Server connected.");
 });

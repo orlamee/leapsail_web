@@ -1,16 +1,16 @@
 /* eslint-disable no-unused-vars */
-import axios from 'axios';
-import React, { useState } from 'react';
+import axios from "axios";
+import React, { useState } from "react";
 // import { Link } from 'react-router-dom';
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 
 function SignUp() {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [phoneNumber, setPhoneNuber] = useState('');
-  const [repeatPassword, setRepeatPassword] = useState('');
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [phoneNumber, setPhoneNuber] = useState("");
+  const [repeatPassword, setRepeatPassword] = useState("");
 
   const [loading, setLoading] = useState(false);
 
@@ -21,7 +21,7 @@ function SignUp() {
     if (password === repeatPassword) {
       try {
         const { data } = await axios.post(
-          'https://lps-ng-app.herokuapp.com/leapsail/api/auth/register',
+          "https://lps-ng-app.herokuapp.com/leapsail/api/auth/register",
           {
             firstName,
             lastName,
@@ -34,9 +34,9 @@ function SignUp() {
         console.log(data);
 
         Swal.fire({
-          icon: 'success',
-          title: 'Email Verification.',
-          text: 'check your email and verify your account',
+          icon: "success",
+          title: "Email Verification.",
+          text: "check your email and verify your account",
           footer: '<a href="">Why do I have this issue?</a>',
         });
 
@@ -49,8 +49,8 @@ function SignUp() {
       }
     } else {
       setLoading(false);
-      Swal.fire('Check password & try again');
-      console.log('wrong credentials');
+      Swal.fire("Check password & try again");
+      console.log("wrong credentials");
     }
   };
 
@@ -149,7 +149,7 @@ function SignUp() {
                         // disabled={true}
                         type="button"
                         className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
-                        style={{ width: '100%' }}
+                        style={{ width: "100%" }}
                       >
                         Loading
                       </button>
@@ -159,7 +159,7 @@ function SignUp() {
                       <button
                         type="submit"
                         className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
-                        style={{ width: '100%' }}
+                        style={{ width: "100%" }}
                       >
                         Register
                       </button>
@@ -168,7 +168,7 @@ function SignUp() {
 
                   <div className="mt-5">
                     <h5 className="text-center">
-                      You already have an account?{' '}
+                      You already have an account?{" "}
                       <span>
                         <a href="/login">Login</a>
                       </span>

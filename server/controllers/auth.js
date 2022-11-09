@@ -16,8 +16,8 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   secure: false,
   auth: {
-    user: "atuzierex0@gmail.com",
-    pass: "rroekeylxsylmzqc",
+    user: "leapsailafrica@gmail.com",
+    pass: "xqrtwkdverhddksi",
   },
   tls: {
     rejectUnauthorized: false,
@@ -41,16 +41,16 @@ const register = async (req, res, next) => {
       emailToken: crypto.randomBytes(64).toString("hex"),
     });
 
+    const data = await user.save();
+
     const mail = {
-      from: ' "Verify your email" <atuzierex@gmail.com>',
+      from: ' "Verify your email" <leapsailafrica@gmail.com>',
       to: user.email,
       subject: "Leapsail Email verification",
-      html: `<h2>${user.firstname}, Thanks for registering</h2>
+      html: `<h2>${data.firstname}, Thanks for registering</h2>
       <h4>Please verify your email to continue</h4>
       <a href="https://lps-ng-app.herokuapp.com/leapsail/api/auth/verify-email?token=${user.emailToken}">Verify your Email</a>`,
     };
-
-    await user.save();
 
     transporter.sendMail(mail, (err, info, next) => {
       if (err) {

@@ -11,8 +11,8 @@ const transporter = nodemailer.createTransport({
   secure: false,
   requireTLS: true,
   auth: {
-    user: "atuzierex0@gmail.com",
-    pass: "rroekeylxsylmzqc",
+    user: "leapsailafrica@gmail.com",
+    pass: "xqrtwkdverhddksi",
   },
 });
 
@@ -86,7 +86,7 @@ const forgetPassword = async (req, res, next) => {
       const link = `https://lps-ng-app.herokuapp.com/leapsail/api/user/reset-password/${user._id}/${token}`;
 
       const mail = {
-        from: "atuzierex0@gmail.com",
+        from: "leapsailafrica@gmail.com",
         to: user.email,
         subject: "Reset Password",
         html: `<p> Hi ${user.firstname} , Click the link to reset Password <a href=${link}>Reset Password</a> </p>`,

@@ -19,7 +19,12 @@ const connectDB = () => {
     .catch((err) => console.error(err));
 };
 
-app.use(cors());
+const corsOptions = {
+  origin: "https://leapsail-web.netlify.app",
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 

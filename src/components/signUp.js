@@ -21,7 +21,7 @@ function SignUp() {
     if (password === repeatPassword) {
       try {
         const { data } = await axios.post(
-          "https://lps-ng-app.herokuapp.com/leapsail/api/auth/register",
+          "https://git.heroku.com/leapsail-africa.git/leapsail/api/auth/register",
           {
             firstName,
             lastName,

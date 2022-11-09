@@ -18,10 +18,12 @@ function SignUp() {
     e.preventDefault();
     setLoading(true);
 
+    // https://git.heroku.com/leapsail-africa.git
+
     if (password === repeatPassword) {
       try {
         const { data } = await axios.post(
-          "https://git.heroku.com/leapsail-africa.git/leapsail/api/auth/register",
+          " http://localhost:8000/leapsail/api/auth/register",
           {
             firstName,
             lastName,

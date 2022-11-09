@@ -43,13 +43,15 @@ const register = async (req, res, next) => {
 
     const data = await user.save();
 
+    // https://lps-ng-app.herokuapp.com
+
     const mail = {
       from: ' "Verify your email" <leapsailafrica@gmail.com>',
       to: user.email,
       subject: "Leapsail Email verification",
       html: `<h2>${data.firstname}, Thanks for registering</h2>
       <h4>Please verify your email to continue</h4>
-      <a href="https://lps-ng-app.herokuapp.com/leapsail/api/auth/verify-email?token=${user.emailToken}">Verify your Email</a>`,
+      <a href="https://git.heroku.com/leapsail-africa.git/leapsail-africa.git/leapsail/api/auth/verify-email?token=${user.emailToken}">Verify your Email</a>`,
     };
 
     transporter.sendMail(mail, (err, info, next) => {

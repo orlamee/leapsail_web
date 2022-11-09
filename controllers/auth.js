@@ -72,15 +72,17 @@ const verifyEmail = async (req, res, next) => {
     const token = req.query.token;
     const user = await User.findOne({ emailToken: token });
 
-    if (!user) {
-      return next(handleError(404, "User does not exist."));
-    } else {
-      user.verified = true;
-      user.emailToken = null;
+    res.send(user);
 
-      await user.save();
-      res.redirect(`https://leapsail-web.netlify.app/otp/${user._id}`);
-    }
+    // if (!user) {
+    //   return next(handleError(404, "User does not exist."));
+    // } else {
+    //   user.verified = true;
+    //   user.emailToken = null;
+
+    //   await user.save();
+    //   res.redirect(`https://leapsail-web.netlify.app/otp/${user._id}`);
+    // }
   } catch (error) {
     next(error);
   }

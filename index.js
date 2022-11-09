@@ -16,7 +16,7 @@ dotenv.config();
 const connectDB = () => {
   mongoose
     .connect(process.env.MONGO)
-    .then(() => console.log("DB connected"))
+    .then(() => console.log("DB connected successfully."))
     .catch((err) => console.error(err));
 };
 

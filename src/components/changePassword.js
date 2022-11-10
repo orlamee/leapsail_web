@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import Swal from 'sweetalert2';
+import React, { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import axios from "axios";
+import Swal from "sweetalert2";
 
 function ChangePassword() {
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
@@ -19,7 +19,7 @@ function ChangePassword() {
     if (password === confirmPassword) {
       try {
         const { data } = await axios.post(
-          `https://lps-ng-app.herokuapp.com/leapsail/api/user/reset-password/${id}`,
+          `https://leapsail-app.herokuapp.com/leapsail/api/user/reset-password/${id}`,
           {
             password,
           }
@@ -29,12 +29,12 @@ function ChangePassword() {
         setLoading(false);
 
         Swal.fire({
-          icon: 'success',
-          title: 'Reset password.',
-          text: 'Yay, password has been reset',
+          icon: "success",
+          title: "Reset password.",
+          text: "Yay, password has been reset",
         });
 
-        navigate('/login');
+        navigate("/login");
       } catch (error) {
         setLoading(false);
         Swal.fire(error.response.data.message);
@@ -43,8 +43,8 @@ function ChangePassword() {
       }
     } else {
       setLoading(false);
-      Swal.fire('Check password & try again');
-      console.log('wrong credentials');
+      Swal.fire("Check password & try again");
+      console.log("wrong credentials");
     }
   };
 
@@ -85,7 +85,7 @@ function ChangePassword() {
                       <button
                         type="button"
                         className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
-                        style={{ width: '100%' }}
+                        style={{ width: "100%" }}
                       >
                         Loading
                       </button>
@@ -95,7 +95,7 @@ function ChangePassword() {
                       <button
                         type="submit"
                         className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
-                        style={{ width: '100%' }}
+                        style={{ width: "100%" }}
                       >
                         Set Password
                       </button>

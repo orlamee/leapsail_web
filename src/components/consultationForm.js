@@ -1,28 +1,28 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import axios from 'axios';
-import React, { useState } from 'react';
-import callcenter from '../img/callcenter.png';
-import Swal from 'sweetalert2';
+import axios from "axios";
+import React, { useState } from "react";
+import callcenter from "../img/callcenter.png";
+import Swal from "sweetalert2";
 
 function ConsultForm() {
-  const [fullname, setFullName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phoneNumber, setPhoneNuber] = useState('');
-  const [productType, setProductType] = useState('');
-  const [enquiryType, setEnquiryType] = useState('');
-  const [others, setOther] = useState('');
-  const [duration, setDuration] = useState('');
-  const [timeZone, setTimeZone] = useState('');
-  const [nameOfOrg, setNameOfOrg] = useState('');
-  const [fullname2, setFullName2] = useState('');
-  const [position, setPosition] = useState('');
-  const [email2, setEmail2] = useState('');
+  const [fullname, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNuber] = useState("");
+  const [productType, setProductType] = useState("");
+  const [enquiryType, setEnquiryType] = useState("");
+  const [others, setOther] = useState("");
+  const [duration, setDuration] = useState("");
+  const [timeZone, setTimeZone] = useState("");
+  const [nameOfOrg, setNameOfOrg] = useState("");
+  const [fullname2, setFullName2] = useState("");
+  const [position, setPosition] = useState("");
+  const [email2, setEmail2] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        'https://lps-ng-app.herokuapp.com/leapsail/api/contact/',
+        "https://leapsail-app.herokuapp.com/leapsail/api/contact/",
         {
           fullname,
           email,
@@ -41,14 +41,14 @@ function ConsultForm() {
 
       console.log(data);
       Swal.fire({
-        icon: 'success',
-        title: 'Done.',
-        text: 'contact form submitted successfully',
+        icon: "success",
+        title: "Done.",
+        text: "contact form submitted successfully",
       });
     } catch (error) {
       Swal.fire({
-        icon: 'error',
-        title: 'Error.',
+        icon: "error",
+        title: "Error.",
         text: `${error.response.data.message}`,
       });
     }

@@ -18,7 +18,7 @@ function ChangePassword() {
 
     if (password === confirmPassword) {
       try {
-        const { data } = await axios.post(
+        const { data } = await axios.put(
           `https://leapsail-app.herokuapp.com/leapsail/api/user/reset-password/${id}`,
           {
             password,

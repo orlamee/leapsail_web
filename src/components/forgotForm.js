@@ -1,10 +1,10 @@
-import axios from 'axios';
-import React, { useState } from 'react';
-import Swal from 'sweetalert2';
+import axios from "axios";
+import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 function ForgotForm() {
-  const [email, setEmail] = useState('');
-  const [loading, setLoading] = useState('');
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -12,7 +12,7 @@ function ForgotForm() {
 
     try {
       const { data } = await axios.post(
-        'https://lps-ng-app.herokuapp.com/leapsail/api/user/forgot-password',
+        "https://leapsail-app.herokuapp.com/leapsail/api/user/forgot-password",
         {
           email,
         }
@@ -21,9 +21,9 @@ function ForgotForm() {
       console.log(data);
 
       Swal.fire({
-        icon: 'success',
-        title: 'Email Verification.',
-        text: 'check your email and verify your account',
+        icon: "success",
+        title: "Email Verification.",
+        text: "check your email and verify your account",
         // footer: '<a href="">Why do I have this issue?</a>',
       });
 
@@ -72,7 +72,7 @@ function ForgotForm() {
                       <button
                         type="button"
                         className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
-                        style={{ width: '100%' }}
+                        style={{ width: "100%" }}
                       >
                         Loading
                       </button>
@@ -82,7 +82,7 @@ function ForgotForm() {
                       <button
                         type="submit"
                         className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
-                        style={{ width: '100%' }}
+                        style={{ width: "100%" }}
                       >
                         Send
                       </button>

@@ -37,7 +37,11 @@ function ChangePassword() {
         navigate("/login");
       } catch (error) {
         setLoading(false);
-        Swal.fire(error.response.data.message);
+        Swal.fire({
+          icon: "error",
+          title: "Reset password.",
+          text: "Oops, something went wrong",
+        });
         console.log(error.response.data.message);
         console.log(error);
       }

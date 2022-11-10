@@ -1,14 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import download from '../img/downloads.png';
-import axios from 'axios';
-import Swal from 'sweetalert2';
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import download from "../img/downloads.png";
+import axios from "axios";
+import Swal from "sweetalert2";
 
 function LoginForm() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
 
@@ -19,16 +19,16 @@ function LoginForm() {
 
     try {
       const { data } = await axios.post(
-        'https://lps-ng-app.herokuapp.com/leapsail/api/auth/login',
+        "https://leapsail-app.herokuapp.com/leapsail/api/auth/login",
         {
           email,
           password,
         }
       );
 
-      localStorage.setItem('user', JSON.stringify(data));
+      localStorage.setItem("user", JSON.stringify(data));
 
-      navigate('/dashboard');
+      navigate("/dashboard");
     } catch (err) {
       Swal.fire(err.response.data.message);
       console.log(err);
@@ -93,7 +93,7 @@ function LoginForm() {
                       <button
                         type="submit"
                         className="brand-bg text-white px-4 py-3 fs-6 rounded-pill"
-                        style={{ width: '100%' }}
+                        style={{ width: "100%" }}
                       >
                         Log in
                       </button>
@@ -112,7 +112,7 @@ function LoginForm() {
                       </div>
                       <div
                         className="float-end fp"
-                        style={{ marginTop: '-39px' }}
+                        style={{ marginTop: "-39px" }}
                       >
                         <h6>
                           <Link to="/forgot-password">Forgot Password?</Link>
@@ -123,7 +123,7 @@ function LoginForm() {
                       <a
                         href="/register"
                         className="btn btn-outline-warning px-4 py-3 fs-6 rounded-pill"
-                        style={{ width: '100%' }}
+                        style={{ width: "100%" }}
                       >
                         Sign up
                       </a>
